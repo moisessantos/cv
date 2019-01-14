@@ -1,0 +1,76 @@
+/* NAVBAR STYLES */
+
+#navbar {
+    height: 4rem;
+    background-color: aqua;
+    margin-top: 0;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+#navbar button {
+    visibility: hidden;
+}
+
+#navbar ul {
+    float: right;
+    list-style-type: none;
+    margin: 1.4rem;
+    padding: 0;
+    height: 5rem;
+}
+
+#navbar li {
+    display: inline-block;
+}
+
+#navbar a {
+    text-decoration: none;
+}
+
+.active {
+    background-color: #d78f1b6e;
+}
+
+/* CONTENT STYLES */
+#mainContent {
+    margin-top: 4rem;
+    width: 100%;
+}
+
+.blackBg {
+    background-color: black;
+    color: white;
+}
+
+.content {
+    min-height: 20rem;
+}
+
+.experience {
+    min-height: 5rem;
+    font-weight: bold;
+}
+
+/* GENERAL STYLES */
+html {
+    font-family: sans-serif;
+    font-size: 1.4em;
+}
+
+body {
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 1.4rem;
+    height: 3rem;
+    font-size: 2.0em;
+    font-weight: 900;
+    line-height: 1.4;
+}
+
