@@ -1,0 +1,16 @@
+/* NAVBAR STYLES */
+
+#skillsAsync {
+    min-height: 250px;
+    margin: 10% 0 10% 0;
+}
+
+#skillsAsync svg,img{
+    margin: auto;
+    width: 20%;
+    padding-right: 1rem;
+}
+
+#skillsAsync svg,img:first-child{
+    padding-left: 1rem;
+}
