@@ -6,9 +6,11 @@
 }
 
 #skillsAsync svg,img{
+    display: inline-block;
     margin: auto;
     width: 20%;
     padding-right: 1rem;
+    vertical-align: middle;
 }
 
 #skillsAsync svg,img:first-child{

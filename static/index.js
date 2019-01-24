@@ -64,7 +64,6 @@ function scrollToggleNavbarActiveClass(e)
 
 loadSkills = () => {
     const container = document.querySelector("#skills .content");
-    console.log('loadSkills', container);
     const req = new XMLHttpRequest();
     req.onreadystatechange = () => {
         if (req.readyState != 4) return;
@@ -72,7 +71,6 @@ loadSkills = () => {
             console.log("Error getting skills async!")
             return;
         }
-        console.log(req);
         container.innerHTML = req.response;
     }
     req.open('GET', 'http://localhost:5000/GetSkillsAsync', true);

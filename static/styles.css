@@ -9,6 +9,7 @@
     overflow: hidden;
     top: 0;
     left: 0;
+    z-index: 3;
 }
 
 #name {
@@ -51,17 +52,38 @@
 
 /* CONTENT STYLES */
 #mainContent {
-    margin-top: 4rem;
     width: 100%;
+    max-width: 80%;
+    margin: 6rem auto;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    z-index: 2;
+    position: relative;
 }
+
+#mainContent .section{
+    width: 50%;
+    display: inline-block;
+    padding: 1rem;
+    position: relative;
+}
+
+#mainContent .section>div {
+    margin-bottom: 2rem;
+}
+
 
 .blackBg {
     background-color: black;
     color: white;
 }
 
+.whiteBg {
+    background-color: white;
+}
+
 .content {
-    min-height: 20rem;
     margin: auto 2rem auto 2rem;
 }
 
@@ -74,6 +96,7 @@
 html {
     font-family: 'Roboto', sans-serif;
     font-size: 1.4em;
+    background-color: gray;
 }
 
 body {
@@ -88,5 +111,48 @@ h2 {
     font-size: 2.0em;
     font-weight: 900;
     line-height: 1.4;
+    margin-top:0;
+}
+
+/* CARD STYLES */
+#card {
+    top: 6rem; 
+    position: sticky;
+    position: -webkit-sticky;
+}
+
+#cvPhoto {
+    text-align: center;
+    width: 100%;
+    margin-top: -5rem;
+    min-height: 12rem;
+}
+
+#cvPhoto img{
+    width: 8rem;
+    margin-top: 1rem;
+}
+
+#cvBg {
+    background-image: url('./background.png');
+    height: 7rem;
+}
+
+#iconList {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+#iconList svg {
+    width: 1.5rem;
+}
+
+#iconList a {
+    display: inline-block;
+    margin-right: .5rem;
+}
+
+#iconList a:visited {
+    color: inherit;
 }
 
