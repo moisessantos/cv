@@ -1,3 +1,44 @@
+/* GENERAL STYLES */
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    background-color: gray;
+}
+
+body {
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    padding-top: 1.4rem;
+    height: 2rem;
+    font-size: 1.5em;
+    font-weight: 900;
+    line-height: 1.4;
+    margin-top:0;
+}
+
+h3 {
+    font-size: 0.9em;
+    font-weight: 300;
+    margin: 0;
+}
+
+.blackBg {
+    background-color: black;
+    color: white;
+}
+
+.whiteBg {
+    background-color: white;
+}
+
+.active {
+    font-weight: 800;
+}
+
 /* NAVBAR STYLES */
 
 #navbar {
@@ -46,10 +87,6 @@
     text-shadow: 0 0 1px rgba(0,0,0,.5);
 }
 
-.active {
-    font-weight: 800;
-}
-
 /* CONTENT STYLES */
 #mainContent {
     width: 100%;
@@ -62,8 +99,7 @@
     position: relative;
 }
 
-#mainContent .section{
-    width: 50%;
+.section{
     display: inline-block;
     padding: 1rem;
     position: relative;
@@ -73,45 +109,21 @@
     margin-bottom: 2rem;
 }
 
-
-.blackBg {
-    background-color: black;
-    color: white;
-}
-
-.whiteBg {
-    background-color: white;
-}
-
 .content {
     margin: auto 2rem auto 2rem;
+}
+
+.card {
+    width: 40%;
+}
+
+.blocks {
+    width: 70%;
 }
 
 .experience {
     min-height: 5rem;
     font-weight: bold;
-}
-
-/* GENERAL STYLES */
-html {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.4em;
-    background-color: gray;
-}
-
-body {
-    margin: 0;
-}
-
-h2 {
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-    padding-top: 1.4rem;
-    height: 3rem;
-    font-size: 2.0em;
-    font-weight: 900;
-    line-height: 1.4;
-    margin-top:0;
 }
 
 /* CARD STYLES */
@@ -133,18 +145,23 @@ h2 {
     margin-top: 1rem;
 }
 
+#cvPhoto h2 {
+    margin-bottom: 0rem;
+}
+
 #cvBg {
     background-image: url('./background.png');
     height: 7rem;
 }
 
 #iconList {
+    margin-top: .5rem;
     text-align: center;
     padding-bottom: 1rem;
 }
 
 #iconList svg {
-    width: 1.5rem;
+    width: 1rem;
 }
 
 #iconList a {
@@ -155,4 +172,3 @@ h2 {
 #iconList a:visited {
     color: inherit;
 }
-
