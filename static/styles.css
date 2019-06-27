@@ -2,7 +2,6 @@
 html {
     font-family: 'Roboto', sans-serif;
     font-size: 1.4em;
-    background-color: gray;
 }
 
 body {
@@ -26,15 +25,6 @@ h3 {
     margin: 0;
 }
 
-.blackBg {
-    background-color: black;
-    color: white;
-}
-
-.whiteBg {
-    background-color: white;
-}
-
 .active {
     font-weight: 800;
 }
@@ -44,7 +34,6 @@ h3 {
 #navbar {
     height: 4rem;
     background-color:white;
-    margin-top: 0;
     width: 100%;
     position: fixed;
     overflow: hidden;
@@ -90,8 +79,7 @@ h3 {
 /* CONTENT STYLES */
 #mainContent {
     width: 100%;
-    max-width: 80%;
-    margin: 6rem auto;
+    margin: 4rem auto;
     display: flex;
     align-items: stretch;
     justify-content: space-around;
@@ -101,24 +89,30 @@ h3 {
 
 .section{
     display: inline-block;
-    padding: 1rem;
     position: relative;
 }
 
-#mainContent .section>div {
+.section>div {
     margin-bottom: 2rem;
+}
+
+.blocks>div {
+    min-height: 25rem;
 }
 
 .content {
     margin: auto 2rem auto 2rem;
+    line-height: 1.5rem;
 }
 
 .card {
     width: 40%;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 .blocks {
-    width: 70%;
+    width: 60%;
 }
 
 .experience {

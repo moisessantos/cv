@@ -10,8 +10,7 @@
   "author": "Moisés Santos",
   "license": "UNLICENSED",
   "dependencies": {
-    "express": "^4.16.4",
-    "npm": "^6.5.0"
+    "express": "^4.16.4"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"

@@ -62,19 +62,10 @@ function scrollToggleNavbarActiveClass(e)
     }
 }
 
-loadSkills = () => {
+loadSkills = async () => {
     const container = document.querySelector("#skills .content");
-    const req = new XMLHttpRequest();
-    req.onreadystatechange = () => {
-        if (req.readyState != 4) return;
-        if (req.status != 200 && req.status != 304) {
-            console.log("Error getting skills async!")
-            return;
-        }
-        container.innerHTML = req.response;
-    }
-    req.open('GET', 'http://localhost:5000/GetSkillsAsync', true);
-    req.send();
+    const response = await fetch('./GetSkillsAsync');
+    container.innerHTML = await response.text();
 }
 
 window.onload = function() {    
