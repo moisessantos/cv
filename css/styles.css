@@ -1,0 +1,44 @@
+/* VARIABLES */
+:root {
+    --padding: 1.4rem;
+}
+
+/* GENERAL STYLES */
+html {
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+}
+
+body {
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    padding-top: var(--padding);
+    height: 2rem;
+    font-size: 1.5em;
+    font-weight: 900;
+    line-height: 1.4;
+    margin-top:0;
+}
+
+h3 {
+    font-size: 0.9em;
+    font-weight: 300;
+    margin: 0;
+}
+
+.hero {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: var(--padding) 0
+}
+
+.photo {
+    height: 200px;
+    border-radius: 50%;
+}
